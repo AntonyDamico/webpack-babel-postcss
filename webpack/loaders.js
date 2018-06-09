@@ -11,24 +11,24 @@ const JSLoader = {
   }
 };
 
-const CssLoader = {
-  test: /\.css$/,
-  use: [
-    'style-loader',
-    // MiniCssExtractPlugin.loader,
-    'css-loader',
-    {
-      loader: "postcss-loader",
-      options: {
-        config: {
-          path: __dirname + "/postcss.config.js"
-        }
-      }
-    }
-  ]
-};
+// const CssLoader = {
+//   test: /\.css$/,
+//   use: [
+//     'style-loader',
+//     // MiniCssExtractPlugin.loader,
+//     'css-loader',
+//     {
+//       loader: "postcss-loader",
+//       options: {
+//         config: {
+//           path: __dirname + "/postcss.config.js"
+//         }
+//       }
+//     }
+//   ]
+// };
 
 module.exports = {
-  CssLoader,
+  // CssLoader,
   JSLoader
 };

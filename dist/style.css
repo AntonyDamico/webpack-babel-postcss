@@ -1,4 +1,6 @@
-@import "prueba";
+body {
+  color: white;
+}
 
 * {
   background: steelblue;

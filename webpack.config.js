@@ -19,7 +19,22 @@ module.exports = {
   module: {
     rules: [
       loaders.JSLoader,
-      loaders.CssLoader
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: "postcss-loader",
+            options: {
+              config: {
+                path: __dirname + "/webpack/postcss.config.js"
+              }
+            }
+          }
+        ]
+      }
     ]
   },
   plugins: [
