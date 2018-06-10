@@ -8,13 +8,13 @@ const webpack = require('webpack'),
 module.exports = {
   entry: {
     app: [
-      './src/js/app.js',
-      './src/css/styles.css'
+      './src/assets/js/app.js',
+      './src/assets/css/styles.css'
     ]
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'src/dist')
   },
   module: {
     rules: [
